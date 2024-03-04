@@ -214,6 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
     async function initAutocomplete() {
         var input = document.getElementById('place-input');
         var autocomplete = new google.maps.places.Autocomplete(input);
+        
         autocomplete.addListener('place_changed', async function() {
             var place = autocomplete.getPlace();
             var placeId = place.place_id;
@@ -302,13 +303,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call the main function when the page is loaded
     main();
 
+
     // Call the main function when the input value changes
     document.getElementById('place-input').addEventListener('input',main );
 });
 
 
 
-
+document.addEventListener('DOMContentLoaded', initAutocomplete);
+document.addEventListener('DOMContentLoaded', gps);
 
 
 
@@ -613,3 +616,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call the main function when the input value changes
     document.getElementById('place-input').addEventListener('input',main );
 });
+
+
+
+
+
+
