@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     let mode = data.weather[0].main;
                     let icon="https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png";
 
-                    
+
                     var now = new Date();
                     var hour = now.getHours();
                      if (hour >= 10 && hour < 16) {
@@ -307,23 +307,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                  let currentDate1 = new Date();
                  currentDate1.setDate(currentDate1.getDate() + 1);
-                 let formattedDate1 = currentDate1.toLocaleDateString('he-IL', { month: 'numeric', day: 'numeric', timeZone: 'Asia/Jerusalem' });
+                 let formattedDate1 = currentDate1.toLocaleDateString('he-IL',{ month: "numeric", day: "2-digit", timeZone: 'Asia/Jerusalem' });
                 
                  let currentDate2 = new Date();
                  currentDate2.setDate(currentDate2.getDate() + 2);
-                 let formattedDate2 = currentDate2.toLocaleDateString('he-IL', { month: 'numeric', day: 'numeric', timeZone: 'Asia/Jerusalem' });
+                 let formattedDate2 = currentDate2.toLocaleDateString('he-IL',{ month: "numeric", day: "2-digit", timeZone: 'Asia/Jerusalem' });
                 
                  let currentDate3 = new Date();
                  currentDate3.setDate(currentDate3.getDate() + 3);
-                 let formattedDate3 = currentDate3.toLocaleDateString('he-IL', { month: 'numeric', day: 'numeric', timeZone: 'Asia/Jerusalem' });
+                 let formattedDate3 = currentDate3.toLocaleDateString('he-IL',{ month: "numeric", day: "2-digit", timeZone: 'Asia/Jerusalem' });
                  
                  let currentDate4 = new Date();
                  currentDate4.setDate(currentDate4.getDate() + 4);
-                 let formattedDate4 = currentDate4.toLocaleDateString('he-IL', { month: 'numeric', day: 'numeric', timeZone: 'Asia/Jerusalem' });
+                 let formattedDate4 = currentDate4.toLocaleDateString('he-IL', { month: "numeric", day: "2-digit", timeZone: 'Asia/Jerusalem' });
                 
                  let currentDate5 = new Date();
                  currentDate5.setDate(currentDate5.getDate() + 5);
-                 let formattedDate5 = currentDate5.toLocaleDateString('he-IL', { month: 'numeric', day: 'numeric', timeZone: 'Asia/Jerusalem' });
+                 let formattedDate5 = currentDate5.toLocaleDateString('he-IL', { month: "numeric", day: "2-digit", timeZone: 'Asia/Jerusalem' });
               
                  dataTime.innerHTML =
                  "<p>"+formattedDate1+'</p>'+"<img src="+getIconSun(weatherDay1,iconDay1)+">"+"<p1>"+getMode(weatherDay1)+"</p1>"+"<p2>"+tempDay1+" ° C"+"</p2>"+"<hr>"+
@@ -519,19 +519,23 @@ document.addEventListener('DOMContentLoaded', function() {
               
                  let currentDate1 = new Date();
                  currentDate1.setDate(currentDate1.getDate() + 1);
-                 let formattedDate1 = currentDate1.toLocaleDateString('he-IL', { timeZone: 'Asia/Jerusalem' }).substring(0,3);
+                 let formattedDate1 = currentDate1.toLocaleDateString('he-IL', { month: "numeric", day: "2-digit", timeZone: 'Asia/Jerusalem' });
+                
                  let currentDate2 = new Date();
                  currentDate2.setDate(currentDate2.getDate() + 2);
-                 let formattedDate2 = currentDate2.toLocaleDateString('he-IL', { timeZone: 'Asia/Jerusalem' }).substring(0,3);
+                 let formattedDate2 = currentDate2.toLocaleDateString('he-IL', { month: "numeric", day: "2-digit", timeZone: 'Asia/Jerusalem' });
+                
                  let currentDate3 = new Date();
                  currentDate3.setDate(currentDate3.getDate() + 3);
-                 let formattedDate3 = currentDate3.toLocaleDateString('he-IL', { timeZone: 'Asia/Jerusalem' }).substring(0,3);
+                 let formattedDate3 = currentDate3.toLocaleDateString('he-IL',{ month: "numeric", day: "2-digit", timeZone: 'Asia/Jerusalem' });
+                 
                  let currentDate4 = new Date();
                  currentDate4.setDate(currentDate4.getDate() + 4);
-                 let formattedDate4 = currentDate4.toLocaleDateString('he-IL', { timeZone: 'Asia/Jerusalem' }).substring(0,3);
+                 let formattedDate4 = currentDate4.toLocaleDateString('he-IL', { month: "numeric", day: "2-digit", timeZone: 'Asia/Jerusalem' });
+                
                  let currentDate5 = new Date();
                  currentDate5.setDate(currentDate5.getDate() + 5);
-                 let formattedDate5 = currentDate5.toLocaleDateString('he-IL', { timeZone: 'Asia/Jerusalem' }).substring(0,3);
+                 let formattedDate5 = currentDate5.toLocaleDateString('he-IL', { month: "numeric", day: "2-digit", timeZone: 'Asia/Jerusalem' });
 
               
                  dataTime.innerHTML =

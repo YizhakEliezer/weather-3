@@ -207,7 +207,7 @@ width: 100%;
      flex-direction: column;  
     /* border: 1px solid rgb(223, 0, 0);  */
     margin: 18px;
-   
+  
   } 
 
 
@@ -221,6 +221,7 @@ width: 100%;
   margin: 10px; 
   height: 5px; 
   font-weight: bolder;
+
   
   } 
   #dataTime p1{
@@ -234,7 +235,7 @@ width: 100%;
     bottom: 20px;
      left: -190px;
      font-weight: bolder;
-     
+     /* background-color: rgb(42, 46, 46); */
     } 
 
     #dataTime p2{
@@ -248,6 +249,7 @@ width: 100%;
       bottom: 20px;
        left: -50px;
        font-weight: bolder;
+       /* background-color: rgb(42, 46, 46); */
       } 
 
  #dataTime img{
